@@ -1,0 +1,220 @@
+<div class="background">
+
+    <div class="content">
+        <div *ngFor="let list of current">
+            <!-- ( {{ list[0] }} , {{ list[0] }} ) -->
+            <hr>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td class="white"><div *ngIf="queen[0][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[0][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[0][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[0][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[0][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[0][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[0][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[0][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="black"><div *ngIf="queen[1][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[1][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[1][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[1][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[1][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[1][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[1][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[1][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div *ngIf="queen[2][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[2][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[2][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[2][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[2][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[2][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[2][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[2][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="black"><div *ngIf="queen[3][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[3][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[3][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[3][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[3][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[3][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[3][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[3][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div *ngIf="queen[4][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[4][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[4][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[4][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[4][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[4][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[4][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[4][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="black"><div *ngIf="queen[5][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[5][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[5][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[5][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[5][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[5][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[5][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[5][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div *ngIf="queen[6][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[6][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[6][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[6][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[6][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[6][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[6][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[6][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+        <tr>
+            <td class="black"><div *ngIf="queen[7][0]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[7][1]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[7][2]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[7][3]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[7][4]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[7][5]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="black"><div *ngIf="queen[7][6]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+            <td class="white"><div *ngIf="queen[7][7]" class="queen">
+                <img src="assets/queen.svg" class="queen-img" alt="" srcset="">
+            </div></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,45 @@
+<div class="background"></div>
+<nav class="navbar">
+  <a class="navbar-brand">Graphs</a>
+    Nodos: <input class="form-control fomulario" type="number" placeholder="Nodos" [(ngModel)]="NNodos">
+    Velocidad: <input class="form-control fomulario" type="number" placeholder="Velocidad" [(ngModel)]="velocidad">
+    <select [(ngModel)]="algoritmo" class="form-control fomulario">
+      <option value="prim">Prim</option>
+      <option value="kruskal">Kruskal</option>
+    </select>
+    <button class="btn btn-outline-dark fomulario" (click)="generar()">GENERAR</button>
+    <button class="btn btn-outline-dark fomulario" (click)="resolver()">RESOLVER</button>
+</nav>
+
+<div class="log" [innerHtml]="log" (mouseover)="blurDiagram()" (mouseout)="restoreAll()"></div>
+
+<div class="nodo" *ngFor="let nodo of nodos; index as i" [ngStyle]="{
+  'width': nodo.size + 'vw',
+  'height': nodo.size + 'vw',
+  'top': nodo.top + 'vw',
+  'left': nodo.left + 'vw',
+  'border-radius': nodo.radius + 'vw',
+  'border-width': nodo.border + 'vw',
+  'background-color': nodo.bgcolor,
+  'font-size': nodo.font + 'vw',
+  'padding': nodo.padding + 'vw',
+  'opacity': nodo.opacidad
+  }" id="nodo.value" (mouseover)="blurAll(nodo.posicion)" (mouseout)="restoreAll()">
+  {{ nodo.value }}
+</div>
+
+<div class="arista" *ngFor="let arista of aristas; index as i" [ngStyle]="{
+  'width': arista.width + 'vw',
+  'height': arista.height + 'vw',
+  'transform': 'rotate(' + arista.angle + 'deg)',
+  'top': arista.top + 'vw',
+  'left': arista.left + 'vw',
+  'border-width': arista.border + 'vw',
+  'background-color': arista.bgcolor,
+  'font-size': arista.font + 'vw',
+  'transform-origin': '0 0',
+  'opacity': arista.opacidad
+  }">
+  {{ arista.value }}
+</div>
+
